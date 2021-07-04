@@ -13,6 +13,10 @@
 		F49428ED269212B100CC436A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49428EC269212B100CC436A /* Preview Assets.xcassets */; };
 		F49428F6269215A800CC436A /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = F49428F5269215A800CC436A /* Apollo */; };
 		F49428F8269215A800CC436A /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = F49428F7269215A800CC436A /* ApolloWebSocket */; };
+		F49428FB26921E1500CC436A /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = F49428FA26921E1500CC436A /* schema.json */; };
+		F49428FF269223CB00CC436A /* StarWarsPeople.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F49428FE269223CA00CC436A /* StarWarsPeople.graphql */; };
+		F49429012692244200CC436A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49429002692244200CC436A /* API.swift */; };
+		F4942904269225CB00CC436A /* ApolloService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4942903269225CB00CC436A /* ApolloService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F49428E9269212B100CC436A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F49428EC269212B100CC436A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F49428EE269212B100CC436A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49428FA26921E1500CC436A /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		F49428FE269223CA00CC436A /* StarWarsPeople.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StarWarsPeople.graphql; sourceTree = "<group>"; };
+		F49429002692244200CC436A /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F4942903269225CB00CC436A /* ApolloService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		F49428E4269212B000CC436A /* Ravn-Challenge-V2-DanielCornejo */ = {
 			isa = PBXGroup;
 			children = (
+				F49429022692254D00CC436A /* Network */,
+				F49428FC26921E9000CC436A /* Resources */,
 				F49428E5269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift */,
 				F49428E7269212B000CC436A /* ContentView.swift */,
 				F49428E9269212B100CC436A /* Assets.xcassets */,
@@ -73,6 +83,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F49428FC26921E9000CC436A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F49428FD26921EA800CC436A /* GraphQL */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F49428FD26921EA800CC436A /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				F49429002692244200CC436A /* API.swift */,
+				F49428FE269223CA00CC436A /* StarWarsPeople.graphql */,
+				F49428FA26921E1500CC436A /* schema.json */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		F49429022692254D00CC436A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F4942903269225CB00CC436A /* ApolloService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,6 +116,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F49428F1269212B100CC436A /* Build configuration list for PBXNativeTarget "Ravn-Challenge-V2-DanielCornejo" */;
 			buildPhases = (
+				F49428F9269219E100CC436A /* Apollo CLI */,
 				F49428DE269212B000CC436A /* Sources */,
 				F49428DF269212B000CC436A /* Frameworks */,
 				F49428E0269212B000CC436A /* Resources */,
@@ -138,11 +175,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49428ED269212B100CC436A /* Preview Assets.xcassets in Resources */,
+				F49428FB26921E1500CC436A /* schema.json in Resources */,
 				F49428EA269212B100CC436A /* Assets.xcassets in Resources */,
+				F49428FF269223CB00CC436A /* StarWarsPeople.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F49428F9269219E100CC436A /* Apollo CLI */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Apollo CLI";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"Resources/GraphQL/schema.json\" Resources/GraphQL/API.swift\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://swapi-graphql.netlify.app/.netlify/functions/index\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F49428DE269212B000CC436A /* Sources */ = {
@@ -150,6 +210,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49428E8269212B000CC436A /* ContentView.swift in Sources */,
+				F49429012692244200CC436A /* API.swift in Sources */,
+				F4942904269225CB00CC436A /* ApolloService.swift in Sources */,
 				F49428E6269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
