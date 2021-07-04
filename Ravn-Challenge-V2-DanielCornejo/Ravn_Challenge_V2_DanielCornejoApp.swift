@@ -11,7 +11,7 @@ import SwiftUI
 struct Ravn_Challenge_V2_DanielCornejoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PeopleListView(viewModel: .init())
         }
     }
 }
