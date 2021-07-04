@@ -23,6 +23,7 @@
 		F49429152692410F00CC436A /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49429142692410F00CC436A /* PeopleListViewModel.swift */; };
 		F49429182692436100CC436A /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = F49429172692436100CC436A /* CombineExt */; };
 		F494291A26924DCB00CC436A /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494291926924DCB00CC436A /* PeopleListView.swift */; };
+		F494291C26925D7E00CC436A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F494291B26925D7E00CC436A /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		F49429122692347100CC436A /* StarWarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsService.swift; sourceTree = "<group>"; };
 		F49429142692410F00CC436A /* PeopleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModel.swift; sourceTree = "<group>"; };
 		F494291926924DCB00CC436A /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
+		F494291B26925D7E00CC436A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				F49428E5269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift */,
 				F49428E7269212B000CC436A /* ContentView.swift */,
 				F49428E9269212B100CC436A /* Assets.xcassets */,
+				F494291B26925D7E00CC436A /* Colors.xcassets */,
 				F49428EE269212B100CC436A /* Info.plist */,
 				F49428EB269212B100CC436A /* Preview Content */,
 			);
@@ -241,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F494291C26925D7E00CC436A /* Colors.xcassets in Resources */,
 				F49428ED269212B100CC436A /* Preview Assets.xcassets in Resources */,
 				F49428FB26921E1500CC436A /* schema.json in Resources */,
 				F49428EA269212B100CC436A /* Assets.xcassets in Resources */,
