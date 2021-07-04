@@ -17,6 +17,9 @@
 		F49428FF269223CB00CC436A /* StarWarsPeople.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F49428FE269223CA00CC436A /* StarWarsPeople.graphql */; };
 		F49429012692244200CC436A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49429002692244200CC436A /* API.swift */; };
 		F4942904269225CB00CC436A /* ApolloService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4942903269225CB00CC436A /* ApolloService.swift */; };
+		F49429062692306600CC436A /* ApolloServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49429052692306600CC436A /* ApolloServiceError.swift */; };
+		F494290D269231D400CC436A /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494290C269231D400CC436A /* People.swift */; };
+		F49429132692347100CC436A /* StarWarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49429122692347100CC436A /* StarWarsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		F49428FE269223CA00CC436A /* StarWarsPeople.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StarWarsPeople.graphql; sourceTree = "<group>"; };
 		F49429002692244200CC436A /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F4942903269225CB00CC436A /* ApolloService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloService.swift; sourceTree = "<group>"; };
+		F49429052692306600CC436A /* ApolloServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloServiceError.swift; sourceTree = "<group>"; };
+		F494290C269231D400CC436A /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		F49429122692347100CC436A /* StarWarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		F49428E4269212B000CC436A /* Ravn-Challenge-V2-DanielCornejo */ = {
 			isa = PBXGroup;
 			children = (
+				F4942907269230F900CC436A /* Module */,
 				F49429022692254D00CC436A /* Network */,
 				F49428FC26921E9000CC436A /* Resources */,
 				F49428E5269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift */,
@@ -86,6 +93,7 @@
 		F49428FC26921E9000CC436A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F494290E269232B500CC436A /* Extensions */,
 				F49428FD26921EA800CC436A /* GraphQL */,
 			);
 			path = Resources;
@@ -105,8 +113,57 @@
 			isa = PBXGroup;
 			children = (
 				F4942903269225CB00CC436A /* ApolloService.swift */,
+				F49429052692306600CC436A /* ApolloServiceError.swift */,
+				F49429122692347100CC436A /* StarWarsService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		F4942907269230F900CC436A /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				F49429082692310200CC436A /* Master */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		F49429082692310200CC436A /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				F494290B2692313000CC436A /* Views */,
+				F494290A2692312A00CC436A /* ViewModel */,
+				F49429092692312400CC436A /* Model */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		F49429092692312400CC436A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F494290C269231D400CC436A /* People.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F494290A2692312A00CC436A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F494290B2692313000CC436A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F494290E269232B500CC436A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,9 +266,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49429132692347100CC436A /* StarWarsService.swift in Sources */,
 				F49428E8269212B000CC436A /* ContentView.swift in Sources */,
 				F49429012692244200CC436A /* API.swift in Sources */,
 				F4942904269225CB00CC436A /* ApolloService.swift in Sources */,
+				F49429062692306600CC436A /* ApolloServiceError.swift in Sources */,
+				F494290D269231D400CC436A /* People.swift in Sources */,
 				F49428E6269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

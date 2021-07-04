@@ -9,7 +9,4 @@ import Foundation
 
 struct ApolloServiceError: Error {
     let message: String
-    var error: String {
-        localizedDescription
-    }
 }
