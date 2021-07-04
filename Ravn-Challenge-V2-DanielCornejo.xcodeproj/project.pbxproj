@@ -22,6 +22,7 @@
 		F49429132692347100CC436A /* StarWarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49429122692347100CC436A /* StarWarsService.swift */; };
 		F49429152692410F00CC436A /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49429142692410F00CC436A /* PeopleListViewModel.swift */; };
 		F49429182692436100CC436A /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = F49429172692436100CC436A /* CombineExt */; };
+		F494291A26924DCB00CC436A /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494291926924DCB00CC436A /* PeopleListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		F494290C269231D400CC436A /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		F49429122692347100CC436A /* StarWarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsService.swift; sourceTree = "<group>"; };
 		F49429142692410F00CC436A /* PeopleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModel.swift; sourceTree = "<group>"; };
+		F494291926924DCB00CC436A /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,19 +128,19 @@
 		F4942907269230F900CC436A /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				F49429082692310200CC436A /* StarWarsPeople */,
+				F49429082692310200CC436A /* People */,
 			);
 			path = Module;
 			sourceTree = "<group>";
 		};
-		F49429082692310200CC436A /* StarWarsPeople */ = {
+		F49429082692310200CC436A /* People */ = {
 			isa = PBXGroup;
 			children = (
 				F494290B2692313000CC436A /* Views */,
 				F494290A2692312A00CC436A /* ViewModel */,
 				F49429092692312400CC436A /* Model */,
 			);
-			path = StarWarsPeople;
+			path = People;
 			sourceTree = "<group>";
 		};
 		F49429092692312400CC436A /* Model */ = {
@@ -160,6 +162,7 @@
 		F494290B2692313000CC436A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F494291926924DCB00CC436A /* PeopleListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				F4942904269225CB00CC436A /* ApolloService.swift in Sources */,
 				F49429062692306600CC436A /* ApolloServiceError.swift in Sources */,
 				F494290D269231D400CC436A /* People.swift in Sources */,
+				F494291A26924DCB00CC436A /* PeopleListView.swift in Sources */,
 				F49428E6269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
