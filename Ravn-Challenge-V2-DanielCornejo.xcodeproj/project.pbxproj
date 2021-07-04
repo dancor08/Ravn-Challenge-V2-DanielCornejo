@@ -20,6 +20,8 @@
 		F49429062692306600CC436A /* ApolloServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49429052692306600CC436A /* ApolloServiceError.swift */; };
 		F494290D269231D400CC436A /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494290C269231D400CC436A /* People.swift */; };
 		F49429132692347100CC436A /* StarWarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49429122692347100CC436A /* StarWarsService.swift */; };
+		F49429152692410F00CC436A /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49429142692410F00CC436A /* PeopleListViewModel.swift */; };
+		F49429182692436100CC436A /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = F49429172692436100CC436A /* CombineExt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,7 @@
 		F49429052692306600CC436A /* ApolloServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloServiceError.swift; sourceTree = "<group>"; };
 		F494290C269231D400CC436A /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		F49429122692347100CC436A /* StarWarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsService.swift; sourceTree = "<group>"; };
+		F49429142692410F00CC436A /* PeopleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49428F6269215A800CC436A /* Apollo in Frameworks */,
+				F49429182692436100CC436A /* CombineExt in Frameworks */,
 				F49428F8269215A800CC436A /* ApolloWebSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,19 +126,19 @@
 		F4942907269230F900CC436A /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				F49429082692310200CC436A /* Master */,
+				F49429082692310200CC436A /* StarWarsPeople */,
 			);
 			path = Module;
 			sourceTree = "<group>";
 		};
-		F49429082692310200CC436A /* Master */ = {
+		F49429082692310200CC436A /* StarWarsPeople */ = {
 			isa = PBXGroup;
 			children = (
 				F494290B2692313000CC436A /* Views */,
 				F494290A2692312A00CC436A /* ViewModel */,
 				F49429092692312400CC436A /* Model */,
 			);
-			path = Master;
+			path = StarWarsPeople;
 			sourceTree = "<group>";
 		};
 		F49429092692312400CC436A /* Model */ = {
@@ -148,6 +152,7 @@
 		F494290A2692312A00CC436A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F49429142692410F00CC436A /* PeopleListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			packageProductDependencies = (
 				F49428F5269215A800CC436A /* Apollo */,
 				F49428F7269215A800CC436A /* ApolloWebSocket */,
+				F49429172692436100CC436A /* CombineExt */,
 			);
 			productName = "Ravn-Challenge-V2-DanielCornejo";
 			productReference = F49428E2269212B000CC436A /* Ravn-Challenge-V2-DanielCornejo.app */;
@@ -216,6 +222,7 @@
 			mainGroup = F49428D9269212B000CC436A;
 			packageReferences = (
 				F49428F4269215A800CC436A /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				F49429162692436100CC436A /* XCRemoteSwiftPackageReference "CombineExt" */,
 			);
 			productRefGroup = F49428E3269212B000CC436A /* Products */;
 			projectDirPath = "";
@@ -266,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49429152692410F00CC436A /* PeopleListViewModel.swift in Sources */,
 				F49429132692347100CC436A /* StarWarsService.swift in Sources */,
 				F49428E8269212B000CC436A /* ContentView.swift in Sources */,
 				F49429012692244200CC436A /* API.swift in Sources */,
@@ -471,6 +479,14 @@
 				minimumVersion = 0.44.0;
 			};
 		};
+		F49429162692436100CC436A /* XCRemoteSwiftPackageReference "CombineExt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineExt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -483,6 +499,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F49428F4269215A800CC436A /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = ApolloWebSocket;
+		};
+		F49429172692436100CC436A /* CombineExt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F49429162692436100CC436A /* XCRemoteSwiftPackageReference "CombineExt" */;
+			productName = CombineExt;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
