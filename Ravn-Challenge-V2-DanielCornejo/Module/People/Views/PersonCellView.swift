@@ -23,12 +23,14 @@ struct PersonCellView: View {
                         }
                         Spacer()
                         Image(systemName: "chevron.right")
+                            .padding(.trailing, 6.0)
                     }
                     .padding(16.0)
                     Divider()
                         .padding(.leading, 16.0)
                 }
             }
+            .background(Color.white)
         }
         .buttonStyle(PlainButtonStyle())
     }
