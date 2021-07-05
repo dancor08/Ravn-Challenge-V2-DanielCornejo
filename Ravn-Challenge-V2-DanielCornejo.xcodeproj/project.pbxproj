@@ -26,6 +26,8 @@
 		F494291C26925D7E00CC436A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F494291B26925D7E00CC436A /* Colors.xcassets */; };
 		F494291F26926C7B00CC436A /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494291E26926C7B00CC436A /* SectionHeaderView.swift */; };
 		F4942922269271B200CC436A /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4942921269271B200CC436A /* TextStyle.swift */; };
+		F494292426927DCC00CC436A /* PersonCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494292326927DCC00CC436A /* PersonCellView.swift */; };
+		F494292626928D7C00CC436A /* NavBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494292526928D7C00CC436A /* NavBarStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		F494291B26925D7E00CC436A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F494291E26926C7B00CC436A /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		F4942921269271B200CC436A /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		F494292326927DCC00CC436A /* PersonCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCellView.swift; sourceTree = "<group>"; };
+		F494292526928D7C00CC436A /* NavBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +108,11 @@
 		F49428FC26921E9000CC436A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F494292726928DDD00CC436A /* ViewModifiers */,
 				F49429202692718500CC436A /* Fonts */,
 				F49428E9269212B100CC436A /* Assets.xcassets */,
 				F494291B26925D7E00CC436A /* Colors.xcassets */,
 				F49428FD26921EA800CC436A /* GraphQL */,
-				F4942921269271B200CC436A /* TextStyle.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -172,6 +176,7 @@
 			children = (
 				F494291926924DCB00CC436A /* PeopleListView.swift */,
 				F494291E26926C7B00CC436A /* SectionHeaderView.swift */,
+				F494292326927DCC00CC436A /* PersonCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +186,15 @@
 			children = (
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F494292726928DDD00CC436A /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F4942921269271B200CC436A /* TextStyle.swift */,
+				F494292526928D7C00CC436A /* NavBarStyle.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +305,10 @@
 				F49429132692347100CC436A /* StarWarsService.swift in Sources */,
 				F49428E8269212B000CC436A /* ContentView.swift in Sources */,
 				F49429012692244200CC436A /* API.swift in Sources */,
+				F494292426927DCC00CC436A /* PersonCellView.swift in Sources */,
 				F4942904269225CB00CC436A /* ApolloService.swift in Sources */,
 				F49429062692306600CC436A /* ApolloServiceError.swift in Sources */,
+				F494292626928D7C00CC436A /* NavBarStyle.swift in Sources */,
 				F494290D269231D400CC436A /* People.swift in Sources */,
 				F494291F26926C7B00CC436A /* SectionHeaderView.swift in Sources */,
 				F494291A26924DCB00CC436A /* PeopleListView.swift in Sources */,
