@@ -9,7 +9,7 @@ import Combine
 import Foundation
 
 protocol StarWarsServiceType {
-    func fetchAllPeople() -> AnyPublisher<[People], ApolloServiceError>
+    func fetchAllPeople() -> AnyPublisher<[Person], ApolloServiceError>
 }
 
 struct StarWarsService: StarWarsServiceType {
@@ -22,13 +22,13 @@ struct StarWarsService: StarWarsServiceType {
     }
     
     // MARK: - StarWarsServiceType
-    func fetchAllPeople() -> AnyPublisher<[People], ApolloServiceError> {
+    func fetchAllPeople() -> AnyPublisher<[Person], ApolloServiceError> {
         service.fetch(StarWarsPeopleQuery())
             .compactMap { $0.allPeople?.people?.compactMap { $0?.jsonObject } }
             .tryCompactMap {
                 try JSONSerialization.data(withJSONObject: $0, options: .withoutEscapingSlashes)
             }
-            .decode(type: [People].self, decoder: JSONDecoder())
+            .decode(type: [Person].self, decoder: JSONDecoder())
             .mapError { ApolloServiceError(message: $0.localizedDescription) }
             .eraseToAnyPublisher()
     }

@@ -15,7 +15,7 @@ struct PeopleListView: View {
             ScrollView {
                 LazyVStack(spacing: .zero) {
                     ForEach(viewModel.people, id: \.id) { person in
-                        PersonCellView(name: person.name ?? "", description: person.shortDescription)
+                        PersonCellView(person: person)
                     }
                 }
             }
