@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F405A70C26937074001C40D5 /* UINavigationViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405A70B26937074001C40D5 /* UINavigationViewController+Extensions.swift */; };
 		F49428E6269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49428E5269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift */; };
 		F49428EA269212B100CC436A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49428E9269212B100CC436A /* Assets.xcassets */; };
 		F49428ED269212B100CC436A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49428EC269212B100CC436A /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F405A70B26937074001C40D5 /* UINavigationViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+Extensions.swift"; sourceTree = "<group>"; };
 		F49428E2269212B000CC436A /* Ravn-Challenge-V2-DanielCornejo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ravn-Challenge-V2-DanielCornejo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49428E5269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ravn_Challenge_V2_DanielCornejoApp.swift; sourceTree = "<group>"; };
 		F49428E9269212B100CC436A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F405A70A26936FA3001C40D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F405A70B26937074001C40D5 /* UINavigationViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F49428D9269212B000CC436A = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 		F49428FC26921E9000CC436A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F405A70A26936FA3001C40D5 /* Extensions */,
 				F494292C2692ACEC00CC436A /* CustomViews */,
 				F494292726928DDD00CC436A /* ViewModifiers */,
 				F49429202692718500CC436A /* Fonts */,
@@ -319,6 +330,7 @@
 			files = (
 				F4942922269271B200CC436A /* TextStyle.swift in Sources */,
 				F49429152692410F00CC436A /* PeopleListViewModel.swift in Sources */,
+				F405A70C26937074001C40D5 /* UINavigationViewController+Extensions.swift in Sources */,
 				F494292B2692916A00CC436A /* DataCellView.swift in Sources */,
 				F49429132692347100CC436A /* StarWarsService.swift in Sources */,
 				F49429012692244200CC436A /* API.swift in Sources */,
