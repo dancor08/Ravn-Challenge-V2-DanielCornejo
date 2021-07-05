@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F405A70C26937074001C40D5 /* UINavigationViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405A70B26937074001C40D5 /* UINavigationViewController+Extensions.swift */; };
+		F405A71826939579001C40D5 /* Ravn_Challenge_V2_DanielCornejoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405A71726939579001C40D5 /* Ravn_Challenge_V2_DanielCornejoTests.swift */; };
 		F49428E6269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49428E5269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift */; };
 		F49428EA269212B100CC436A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49428E9269212B100CC436A /* Assets.xcassets */; };
 		F49428ED269212B100CC436A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49428EC269212B100CC436A /* Preview Assets.xcassets */; };
@@ -34,8 +35,21 @@
 		F49429302692B43A00CC436A /* NoticeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494292F2692B43A00CC436A /* NoticeCellView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F405A71A26939579001C40D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F49428DA269212B000CC436A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F49428E1269212B000CC436A;
+			remoteInfo = "Ravn-Challenge-V2-DanielCornejo";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		F405A70B26937074001C40D5 /* UINavigationViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+Extensions.swift"; sourceTree = "<group>"; };
+		F405A71526939579001C40D5 /* Ravn-Challenge-V2-DanielCornejoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ravn-Challenge-V2-DanielCornejoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F405A71726939579001C40D5 /* Ravn_Challenge_V2_DanielCornejoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ravn_Challenge_V2_DanielCornejoTests.swift; sourceTree = "<group>"; };
+		F405A71926939579001C40D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F49428E2269212B000CC436A /* Ravn-Challenge-V2-DanielCornejo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ravn-Challenge-V2-DanielCornejo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49428E5269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ravn_Challenge_V2_DanielCornejoApp.swift; sourceTree = "<group>"; };
 		F49428E9269212B100CC436A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +76,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F405A71226939579001C40D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F49428DF269212B000CC436A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,10 +136,20 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F405A71626939579001C40D5 /* Ravn-Challenge-V2-DanielCornejoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F405A71726939579001C40D5 /* Ravn_Challenge_V2_DanielCornejoTests.swift */,
+				F405A71926939579001C40D5 /* Info.plist */,
+			);
+			path = "Ravn-Challenge-V2-DanielCornejoTests";
+			sourceTree = "<group>";
+		};
 		F49428D9269212B000CC436A = {
 			isa = PBXGroup;
 			children = (
 				F49428E4269212B000CC436A /* Ravn-Challenge-V2-DanielCornejo */,
+				F405A71626939579001C40D5 /* Ravn-Challenge-V2-DanielCornejoTests */,
 				F49428E3269212B000CC436A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				F49428E2269212B000CC436A /* Ravn-Challenge-V2-DanielCornejo.app */,
+				F405A71526939579001C40D5 /* Ravn-Challenge-V2-DanielCornejoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,6 +284,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F405A71426939579001C40D5 /* Ravn-Challenge-V2-DanielCornejoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F405A71C26939579001C40D5 /* Build configuration list for PBXNativeTarget "Ravn-Challenge-V2-DanielCornejoTests" */;
+			buildPhases = (
+				F405A71126939579001C40D5 /* Sources */,
+				F405A71226939579001C40D5 /* Frameworks */,
+				F405A71326939579001C40D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F405A71B26939579001C40D5 /* PBXTargetDependency */,
+			);
+			name = "Ravn-Challenge-V2-DanielCornejoTests";
+			productName = "Ravn-Challenge-V2-DanielCornejoTests";
+			productReference = F405A71526939579001C40D5 /* Ravn-Challenge-V2-DanielCornejoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F49428E1269212B000CC436A /* Ravn-Challenge-V2-DanielCornejo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F49428F1269212B100CC436A /* Build configuration list for PBXNativeTarget "Ravn-Challenge-V2-DanielCornejo" */;
@@ -284,6 +334,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					F405A71426939579001C40D5 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = F49428E1269212B000CC436A;
+					};
 					F49428E1269212B000CC436A = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -307,11 +361,19 @@
 			projectRoot = "";
 			targets = (
 				F49428E1269212B000CC436A /* Ravn-Challenge-V2-DanielCornejo */,
+				F405A71426939579001C40D5 /* Ravn-Challenge-V2-DanielCornejoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F405A71326939579001C40D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F49428E0269212B000CC436A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,6 +410,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F405A71126939579001C40D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F405A71826939579001C40D5 /* Ravn_Challenge_V2_DanielCornejoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F49428DE269212B000CC436A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,7 +444,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F405A71B26939579001C40D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F49428E1269212B000CC436A /* Ravn-Challenge-V2-DanielCornejo */;
+			targetProxy = F405A71A26939579001C40D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F405A71D26939579001C40D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y77D4J5ZWS;
+				INFOPLIST_FILE = "Ravn-Challenge-V2-DanielCornejoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dancor.developer.Ravn-Challenge-V2-DanielCornejoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ravn-Challenge-V2-DanielCornejo.app/Ravn-Challenge-V2-DanielCornejo";
+			};
+			name = Debug;
+		};
+		F405A71E26939579001C40D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y77D4J5ZWS;
+				INFOPLIST_FILE = "Ravn-Challenge-V2-DanielCornejoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dancor.developer.Ravn-Challenge-V2-DanielCornejoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ravn-Challenge-V2-DanielCornejo.app/Ravn-Challenge-V2-DanielCornejo";
+			};
+			name = Release;
+		};
 		F49428EF269212B100CC436A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -538,6 +656,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F405A71C26939579001C40D5 /* Build configuration list for PBXNativeTarget "Ravn-Challenge-V2-DanielCornejoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F405A71D26939579001C40D5 /* Debug */,
+				F405A71E26939579001C40D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F49428DD269212B000CC436A /* Build configuration list for PBXProject "Ravn-Challenge-V2-DanielCornejo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
