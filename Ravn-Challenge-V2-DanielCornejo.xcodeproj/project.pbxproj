@@ -29,6 +29,8 @@
 		F494292626928D7C00CC436A /* NavBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494292526928D7C00CC436A /* NavBarStyle.swift */; };
 		F4942929269290C100CC436A /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4942928269290C100CC436A /* PersonDetailView.swift */; };
 		F494292B2692916A00CC436A /* DataCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494292A2692916A00CC436A /* DataCellView.swift */; };
+		F494292E2692AFB800CC436A /* LoadingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494292D2692AFB800CC436A /* LoadingCellView.swift */; };
+		F49429302692B43A00CC436A /* NoticeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494292F2692B43A00CC436A /* NoticeCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		F494292526928D7C00CC436A /* NavBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarStyle.swift; sourceTree = "<group>"; };
 		F4942928269290C100CC436A /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 		F494292A2692916A00CC436A /* DataCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCellView.swift; sourceTree = "<group>"; };
+		F494292D2692AFB800CC436A /* LoadingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCellView.swift; sourceTree = "<group>"; };
+		F494292F2692B43A00CC436A /* NoticeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +208,8 @@
 			children = (
 				F494291E26926C7B00CC436A /* SectionHeaderView.swift */,
 				F494292A2692916A00CC436A /* DataCellView.swift */,
+				F494292D2692AFB800CC436A /* LoadingCellView.swift */,
+				F494292F2692B43A00CC436A /* NoticeCellView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -320,8 +326,10 @@
 				F4942904269225CB00CC436A /* ApolloService.swift in Sources */,
 				F49429062692306600CC436A /* ApolloServiceError.swift in Sources */,
 				F494292626928D7C00CC436A /* NavBarStyle.swift in Sources */,
+				F494292E2692AFB800CC436A /* LoadingCellView.swift in Sources */,
 				F4942929269290C100CC436A /* PersonDetailView.swift in Sources */,
 				F494290D269231D400CC436A /* Person.swift in Sources */,
+				F49429302692B43A00CC436A /* NoticeCellView.swift in Sources */,
 				F494291F26926C7B00CC436A /* SectionHeaderView.swift in Sources */,
 				F494291A26924DCB00CC436A /* PeopleListView.swift in Sources */,
 				F49428E6269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift in Sources */,
