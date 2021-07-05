@@ -17,7 +17,7 @@ struct StarWarsService: StarWarsServiceType {
     private let service: ApolloServiceType
     
     // MARK: - Init
-    init(service: ApolloServiceType = ApolloService()) {
+    init(service: ApolloServiceType = ApolloService.shared) {
         self.service = service
     }
     
