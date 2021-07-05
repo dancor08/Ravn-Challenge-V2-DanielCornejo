@@ -30,6 +30,7 @@ struct PersonCellView: View {
                 }
             }
         }
+        .buttonStyle(PlainButtonStyle())
     }
 }
 

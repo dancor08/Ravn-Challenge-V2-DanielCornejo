@@ -14,17 +14,24 @@ struct PersonDetailView: View {
     var body: some View {
         ScrollView {
             SectionHeaderView(headerTitle: "General Information")
+            
             DataCellView(title: "Eye Color", subtitle: person.eyeColor ?? "")
+            
             DataCellView(title: "Hair Color", subtitle: person.hairColor ?? "")
+            
             DataCellView(title: "Skin Color", subtitle: person.skinColor ?? "")
+            
             DataCellView(title: "Birth of Year", subtitle: person.birthYear ?? "")
+            
             SectionHeaderView(headerTitle: "Vehicles")
+            
             LazyVStack(alignment: .leading, spacing: .zero) {
                 ForEach(person.vehicleConnection?.vehicles ?? .init(), id: \.id) { vehicle in
                     DataCellView(title: vehicle.name ?? "", subtitle: "")
                 }
             }
         }
+        .navigationBarTitle(person.name ?? "", displayMode: .inline)
     }
 }
 

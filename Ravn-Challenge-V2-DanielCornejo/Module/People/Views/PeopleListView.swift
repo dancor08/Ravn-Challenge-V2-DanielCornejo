@@ -16,6 +16,9 @@ struct PeopleListView: View {
                 LazyVStack(spacing: .zero) {
                     ForEach(viewModel.people, id: \.id) { person in
                         PersonCellView(person: person)
+                            .onAppear {
+                                viewModel.fetchNextPeople(after: person)
+                            }
                     }
                 }
                 if viewModel.isLoading {
@@ -25,8 +28,7 @@ struct PeopleListView: View {
                     NoticeCellView()
                 }
             }
-            .navigationTitle("People of Star Wars")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitle("People of Star Wars", displayMode: .inline)
         }
         .modifier(NavBarStyle(backgroundColor: .black, titleColor: .white))
         .onAppear(perform: viewModel.fetchAllPeople )
