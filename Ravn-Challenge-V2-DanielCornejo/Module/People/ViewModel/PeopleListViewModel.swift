@@ -12,7 +12,6 @@ import Foundation
 final class PeopleListViewModel: ObservableObject {
     
     private var cancellables: Set<AnyCancellable> = .init()
-    
     private let service: StarWarsServiceType
     
     // Input.
@@ -20,7 +19,8 @@ final class PeopleListViewModel: ObservableObject {
     
     // Output.
     @Published var people: [Person] = []
-    @Published var errorMessage: String = ""
+    @Published var showMessage: Bool = false
+    @Published var isLoading: Bool = true
     
     init(service: StarWarsServiceType = StarWarsService()) {
         self.service = service
@@ -35,11 +35,13 @@ final class PeopleListViewModel: ObservableObject {
             .values()
             .assign(to: \.people, on: self, ownership: .weak)
             .store(in: &cancellables)
-
-        allPeopleResponse
-            .failures()
-            .map { $0.message }
-            .assign(to: \.errorMessage, on: self, ownership: .weak)
+        
+        Publishers.Merge(fetchAllPeopleRequest.map { true }, allPeopleResponse.map { _ in false })
+            .assign(to: \.isLoading, on: self, ownership: .weak)
+            .store(in: &cancellables)
+        
+        Publishers.Merge(fetchAllPeopleRequest.map { false }, allPeopleResponse.failures().map { _ in true })
+            .assign(to: \.showMessage, on: self, ownership: .weak)
             .store(in: &cancellables)
     }
     

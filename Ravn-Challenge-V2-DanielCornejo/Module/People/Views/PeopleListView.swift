@@ -18,6 +18,12 @@ struct PeopleListView: View {
                         PersonCellView(person: person)
                     }
                 }
+                if viewModel.isLoading {
+                    LoadingCellView()
+                }
+                if viewModel.showMessage {
+                    NoticeCellView()
+                }
             }
             .navigationTitle("People of Star Wars")
             .navigationBarTitleDisplayMode(.inline)
