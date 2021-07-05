@@ -83,6 +83,38 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F405A70D26939264001C40D5 /* PeopleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F405A7102693927F001C40D5 /* Models */,
+				F405A70F26939275001C40D5 /* ViewModel */,
+				F405A70E2693926F001C40D5 /* Views */,
+			);
+			path = PeopleDetail;
+			sourceTree = "<group>";
+		};
+		F405A70E2693926F001C40D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4942928269290C100CC436A /* PersonDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F405A70F26939275001C40D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F405A7102693927F001C40D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F49428D9269212B000CC436A = {
 			isa = PBXGroup;
 			children = (
@@ -126,10 +158,9 @@
 				F405A70A26936FA3001C40D5 /* Extensions */,
 				F494292C2692ACEC00CC436A /* CustomViews */,
 				F494292726928DDD00CC436A /* ViewModifiers */,
-				F49429202692718500CC436A /* Fonts */,
+				F49428FD26921EA800CC436A /* GraphQL */,
 				F49428E9269212B100CC436A /* Assets.xcassets */,
 				F494291B26925D7E00CC436A /* Colors.xcassets */,
-				F49428FD26921EA800CC436A /* GraphQL */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -157,6 +188,7 @@
 		F4942907269230F900CC436A /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				F405A70D26939264001C40D5 /* PeopleDetail */,
 				F49429082692310200CC436A /* People */,
 			);
 			path = Module;
@@ -193,16 +225,8 @@
 			children = (
 				F494291926924DCB00CC436A /* PeopleListView.swift */,
 				F494292326927DCC00CC436A /* PersonCellView.swift */,
-				F4942928269290C100CC436A /* PersonDetailView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		F49429202692718500CC436A /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		F494292726928DDD00CC436A /* ViewModifiers */ = {
