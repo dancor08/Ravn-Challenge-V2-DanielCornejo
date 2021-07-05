@@ -11,19 +11,18 @@ struct PeopleListView: View {
     @ObservedObject var viewModel: PeopleListViewModel
     
     var body: some View {
-        ScrollView {
-            LazyVStack {
-                ForEach(viewModel.people, id: \.id) { person in
-                    VStack {
-                        Text(person.name ?? "")
-                            .font(.title2)
-                        Text("\(person.species?.name ?? "") from \(person.homeworld?.name ?? "")")
-                            .foregroundColor(.gray)
+        NavigationView {
+            ScrollView {
+                LazyVStack(spacing: .zero) {
+                    ForEach(viewModel.people, id: \.id) { person in
+                        PersonCellView(name: person.name ?? "", description: person.shortDescription)
                     }
-
                 }
             }
+            .navigationTitle("People of Star Wars")
+            .navigationBarTitleDisplayMode(.inline)
         }
+        .modifier(NavBarStyle(backgroundColor: .black, titleColor: .white))
         .onAppear(perform: viewModel.fetchAllPeople )
     }
 }
