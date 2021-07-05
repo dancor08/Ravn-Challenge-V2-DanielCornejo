@@ -1,5 +1,5 @@
 //
-//  People.swift
+//  Person.swift
 //  Ravn-Challenge-V2-DanielCornejo
 //
 //  Created by Daniel Cornejo on 7/4/21.
@@ -8,7 +8,7 @@
 import Apollo
 import Foundation
 
-struct People: Codable {
+struct Person: Codable {
     let birthYear: String?
     let eyeColor: String?
     let hairColor: String?

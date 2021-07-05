@@ -19,7 +19,7 @@ final class PeopleListViewModel: ObservableObject {
     private let fetchAllPeopleRequest = PassthroughRelay<Void>()
     
     // Output.
-    @Published var people: [People] = []
+    @Published var people: [Person] = []
     @Published var errorMessage: String = ""
     
     init(service: StarWarsServiceType = StarWarsService()) {
