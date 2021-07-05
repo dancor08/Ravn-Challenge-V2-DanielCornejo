@@ -9,7 +9,8 @@ import Combine
 import Foundation
 
 protocol StarWarsServiceType {
-    func fetchAllPeople() -> AnyPublisher<[Person], ApolloServiceError>
+    func fetchFirstPeople() -> AnyPublisher<AllPeople, ApolloServiceError>
+    func fetchMorePeople(using cursor: String?) -> AnyPublisher<AllPeople, ApolloServiceError>
 }
 
 struct StarWarsService: StarWarsServiceType {
@@ -22,15 +23,25 @@ struct StarWarsService: StarWarsServiceType {
     }
     
     // MARK: - StarWarsServiceType
-    func fetchAllPeople() -> AnyPublisher<[Person], ApolloServiceError> {
-        service.fetch(StarWarsPeopleQuery())
-            .compactMap { $0.allPeople?.people?.compactMap { $0?.jsonObject } }
+    func fetchFirstPeople() -> AnyPublisher<AllPeople, ApolloServiceError> {
+        service.fetch(StarWarsPeopleQuery(first: 5))
+            .compactMap { $0.allPeople?.jsonObject }
             .tryCompactMap {
                 try JSONSerialization.data(withJSONObject: $0, options: .withoutEscapingSlashes)
             }
-            .decode(type: [Person].self, decoder: JSONDecoder())
+            .decode(type: AllPeople.self, decoder: JSONDecoder())
             .mapError { ApolloServiceError(message: $0.localizedDescription) }
             .eraseToAnyPublisher()
     }
     
+    func fetchMorePeople(using cursor: String?) -> AnyPublisher<AllPeople, ApolloServiceError> {
+        service.fetch(StarWarsPeopleQuery(first: 5, after: cursor))
+            .compactMap { $0.allPeople?.jsonObject }
+            .tryCompactMap {
+                try JSONSerialization.data(withJSONObject: $0, options: .withoutEscapingSlashes)
+            }
+            .decode(type: AllPeople.self, decoder: JSONDecoder())
+            .mapError { ApolloServiceError(message: $0.localizedDescription) }
+            .eraseToAnyPublisher()
+    }
 }
