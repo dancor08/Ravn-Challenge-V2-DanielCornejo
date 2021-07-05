@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F49428E6269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49428E5269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift */; };
-		F49428E8269212B000CC436A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49428E7269212B000CC436A /* ContentView.swift */; };
 		F49428EA269212B100CC436A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49428E9269212B100CC436A /* Assets.xcassets */; };
 		F49428ED269212B100CC436A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49428EC269212B100CC436A /* Preview Assets.xcassets */; };
 		F49428F6269215A800CC436A /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = F49428F5269215A800CC436A /* Apollo */; };
@@ -33,7 +32,6 @@
 /* Begin PBXFileReference section */
 		F49428E2269212B000CC436A /* Ravn-Challenge-V2-DanielCornejo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ravn-Challenge-V2-DanielCornejo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49428E5269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ravn_Challenge_V2_DanielCornejoApp.swift; sourceTree = "<group>"; };
-		F49428E7269212B000CC436A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F49428E9269212B100CC436A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F49428EC269212B100CC436A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F49428EE269212B100CC436A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				F49429022692254D00CC436A /* Network */,
 				F49428FC26921E9000CC436A /* Resources */,
 				F49428E5269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift */,
-				F49428E7269212B000CC436A /* ContentView.swift */,
 				F49428EE269212B100CC436A /* Info.plist */,
 				F49428EB269212B100CC436A /* Preview Content */,
 			);
@@ -303,7 +300,6 @@
 				F4942922269271B200CC436A /* TextStyle.swift in Sources */,
 				F49429152692410F00CC436A /* PeopleListViewModel.swift in Sources */,
 				F49429132692347100CC436A /* StarWarsService.swift in Sources */,
-				F49428E8269212B000CC436A /* ContentView.swift in Sources */,
 				F49429012692244200CC436A /* API.swift in Sources */,
 				F494292426927DCC00CC436A /* PersonCellView.swift in Sources */,
 				F4942904269225CB00CC436A /* ApolloService.swift in Sources */,
