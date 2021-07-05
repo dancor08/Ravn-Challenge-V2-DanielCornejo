@@ -18,6 +18,17 @@ struct People: Codable {
     let skinColor: String?
     let species: Species?
     let vehicleConnection: Vehicles?
+    
+    /// Short description of this person species and homeworld
+    var shortDescription: String {
+        guard let home = homeworld?.name else { return "" }
+        
+        if let species = species?.name {
+            return "\(species) from \(home)"
+        } else {
+            return "Human from \(home)"
+        }
+    }
 }
 
 struct Species: Codable {
