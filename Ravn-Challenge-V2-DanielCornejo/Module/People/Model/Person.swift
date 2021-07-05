@@ -8,6 +8,16 @@
 import Apollo
 import Foundation
 
+struct AllPeople: Codable {
+    let pageInfo: PageInfo
+    let people: [Person]?
+}
+
+struct PageInfo: Codable {
+    let hasNextPage: Bool?
+    let endCursor: String?
+}
+
 struct Person: Codable {
     let birthYear: String?
     let eyeColor: String?
