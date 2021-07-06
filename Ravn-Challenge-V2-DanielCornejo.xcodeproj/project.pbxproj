@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F405A70C26937074001C40D5 /* UINavigationViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405A70B26937074001C40D5 /* UINavigationViewController+Extensions.swift */; };
 		F405A71826939579001C40D5 /* Ravn_Challenge_V2_DanielCornejoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405A71726939579001C40D5 /* Ravn_Challenge_V2_DanielCornejoTests.swift */; };
+		F405A72026939A76001C40D5 /* StarWarsServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405A71F26939A76001C40D5 /* StarWarsServiceTest.swift */; };
+		F405A7262693AA04001C40D5 /* ApolloServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405A7252693AA04001C40D5 /* ApolloServiceMock.swift */; };
+		F405A7282693D756001C40D5 /* StarWarsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405A7272693D756001C40D5 /* StarWarsServiceMock.swift */; };
+		F405A72A2693D9CB001C40D5 /* PeopleListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405A7292693D9CB001C40D5 /* PeopleListViewModelTest.swift */; };
 		F49428E6269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49428E5269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift */; };
 		F49428EA269212B100CC436A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49428E9269212B100CC436A /* Assets.xcassets */; };
 		F49428ED269212B100CC436A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49428EC269212B100CC436A /* Preview Assets.xcassets */; };
@@ -50,6 +54,10 @@
 		F405A71526939579001C40D5 /* Ravn-Challenge-V2-DanielCornejoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ravn-Challenge-V2-DanielCornejoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F405A71726939579001C40D5 /* Ravn_Challenge_V2_DanielCornejoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ravn_Challenge_V2_DanielCornejoTests.swift; sourceTree = "<group>"; };
 		F405A71926939579001C40D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F405A71F26939A76001C40D5 /* StarWarsServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsServiceTest.swift; sourceTree = "<group>"; };
+		F405A7252693AA04001C40D5 /* ApolloServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloServiceMock.swift; sourceTree = "<group>"; };
+		F405A7272693D756001C40D5 /* StarWarsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsServiceMock.swift; sourceTree = "<group>"; };
+		F405A7292693D9CB001C40D5 /* PeopleListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModelTest.swift; sourceTree = "<group>"; };
 		F49428E2269212B000CC436A /* Ravn-Challenge-V2-DanielCornejo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ravn-Challenge-V2-DanielCornejo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49428E5269212B000CC436A /* Ravn_Challenge_V2_DanielCornejoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ravn_Challenge_V2_DanielCornejoApp.swift; sourceTree = "<group>"; };
 		F49428E9269212B100CC436A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,10 +147,22 @@
 		F405A71626939579001C40D5 /* Ravn-Challenge-V2-DanielCornejoTests */ = {
 			isa = PBXGroup;
 			children = (
+				F405A7242693A9B7001C40D5 /* Mocks */,
 				F405A71726939579001C40D5 /* Ravn_Challenge_V2_DanielCornejoTests.swift */,
 				F405A71926939579001C40D5 /* Info.plist */,
+				F405A71F26939A76001C40D5 /* StarWarsServiceTest.swift */,
+				F405A7292693D9CB001C40D5 /* PeopleListViewModelTest.swift */,
 			);
 			path = "Ravn-Challenge-V2-DanielCornejoTests";
+			sourceTree = "<group>";
+		};
+		F405A7242693A9B7001C40D5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F405A7252693AA04001C40D5 /* ApolloServiceMock.swift */,
+				F405A7272693D756001C40D5 /* StarWarsServiceMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		F49428D9269212B000CC436A = {
@@ -414,7 +434,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F405A72026939A76001C40D5 /* StarWarsServiceTest.swift in Sources */,
+				F405A7262693AA04001C40D5 /* ApolloServiceMock.swift in Sources */,
+				F405A7282693D756001C40D5 /* StarWarsServiceMock.swift in Sources */,
 				F405A71826939579001C40D5 /* Ravn_Challenge_V2_DanielCornejoTests.swift in Sources */,
+				F405A72A2693D9CB001C40D5 /* PeopleListViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,7 +651,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dancor.developer.Ravn-Challenge-V2-DanielCornejo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -649,7 +673,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dancor.developer.Ravn-Challenge-V2-DanielCornejo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
