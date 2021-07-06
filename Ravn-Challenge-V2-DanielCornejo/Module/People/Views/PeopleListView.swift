@@ -31,7 +31,7 @@ struct PeopleListView: View {
             .navigationBarTitle("People of Star Wars", displayMode: .inline)
         }
         .modifier(NavBarStyle(backgroundColor: .black, titleColor: .white))
-        .onAppear(perform: viewModel.fetchAllPeople )
+        .onAppear(perform: viewModel.fetchFirstPeople )
     }
 }
 

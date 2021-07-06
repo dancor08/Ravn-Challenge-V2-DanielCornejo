@@ -76,7 +76,7 @@ final class PeopleListViewModel: ObservableObject {
     }
     
     // MARK: -Methods.
-    func fetchAllPeople() {
+    func fetchFirstPeople() {
         fetchAllPeopleRequest.accept(())
     }
     
