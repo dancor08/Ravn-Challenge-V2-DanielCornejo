@@ -327,6 +327,7 @@
 			buildConfigurationList = F49428F1269212B100CC436A /* Build configuration list for PBXNativeTarget "Ravn-Challenge-V2-DanielCornejo" */;
 			buildPhases = (
 				F49428F9269219E100CC436A /* Apollo CLI */,
+				1964CEB326C0E80800D00BED /* Swiflint */,
 				F49428DE269212B000CC436A /* Sources */,
 				F49428DF269212B000CC436A /* Frameworks */,
 				F49428E0269212B000CC436A /* Resources */,
@@ -409,6 +410,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1964CEB326C0E80800D00BED /* Swiflint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiflint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		F49428F9269219E100CC436A /* Apollo CLI */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
